@@ -1,2 +1,2 @@
-# resuable_workflows
+# reusable-workflows
 Organization-wide reusable workflows
