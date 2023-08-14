@@ -18,10 +18,6 @@ jobs:
       packages: read
       statuses: write
 
-    strategy:
-      matrix:
-        dotnet-version: ["6.x"]
-
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@394d78e5b40cc35c170eb909b1f81551f37feb05 # v2.5.0
@@ -30,13 +26,6 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@96f53100ba2a5449eb71d2e6604bbcd94b9449b5 # v3.5.3
-
-      - name: Set up Dotnet ${{ matrix.dotnet-version }}
-        uses: actions/setup-dotnet@4dba25fa3156706981607e1598b263e056dc3008 # v3.2.0
-        with:
-          dotnet-version: ${{ matrix.dotnet-version }}
-          cache: true
-          cache-dependency-path: Packages/packages.lock.json
 
       - name: Linting C#
         uses: super-linter/super-linter@ab3ef521138772689ab517eae6c677df902dcef6 # v5.2.0
