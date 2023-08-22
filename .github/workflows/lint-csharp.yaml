@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@96f53100ba2a5449eb71d2e6604bbcd94b9449b5 # v3.5.3
 
       - name: Linting C#
-        uses: super-linter/super-linter@ab3ef521138772689ab517eae6c677df902dcef6 # v5.2.0
+        uses: super-linter/super-linter@dafca895e78ca7fe181d0de7f3720b83d18a7916 # v5.2.0
         env:
           VALIDATE_CSHARP: true
           VALIDATE_YAML: true
