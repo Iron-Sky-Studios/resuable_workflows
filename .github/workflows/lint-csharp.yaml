@@ -20,7 +20,7 @@ jobs:
           egress-policy: audit
 
       - name: Checkout repository
-        uses: actions/checkout@7739b9ba2efcda9dde65ad1e3c2dbe65b41dfba7 # v3.5.3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.5.3
 
       - name: Linting C#
         uses: super-linter/super-linter@bc9693bc5e2a15d216351f8939b2f11560ef73f5 # v5.2.0
